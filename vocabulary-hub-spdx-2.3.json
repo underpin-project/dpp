@@ -1,0 +1,38 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "vocabulary-hub-edc",
+  "documentNamespace": "http://trivy.dev/repository/vocabulary-hub-edc-8c610de9-1a27-4c7e-be99-a5f2c6547ddb",
+  "creationInfo": {
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.65.0"
+    ],
+    "created": "2025-10-21T10:21:04Z"
+  },
+  "packages": [
+    {
+      "name": "vocabulary-hub-edc",
+      "SPDXID": "SPDXRef-Repository-2967ac88b3b67da3",
+      "downloadLocation": "git+vocabulary-hub-edc",
+      "filesAnalyzed": false,
+      "primaryPackagePurpose": "SOURCE",
+      "annotations": [
+        {
+          "annotator": "Tool: trivy-0.65.0",
+          "annotationDate": "2025-10-21T10:21:04Z",
+          "annotationType": "OTHER",
+          "comment": "SchemaVersion: 2"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Repository-2967ac88b3b67da3",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}

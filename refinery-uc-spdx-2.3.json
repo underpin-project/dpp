@@ -1,0 +1,38 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "inference_pipeline.tar.gz",
+  "documentNamespace": "http://trivy.dev/filesystem/inference_pipeline.tar.gz-1e814cfa-f843-4886-b8ed-21e2430900d3",
+  "creationInfo": {
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.67.0"
+    ],
+    "created": "2025-10-02T12:56:11Z"
+  },
+  "packages": [
+    {
+      "name": "inference_pipeline.tar.gz",
+      "SPDXID": "SPDXRef-Filesystem-313f3a882b3e1b53",
+      "downloadLocation": "NONE",
+      "filesAnalyzed": false,
+      "primaryPackagePurpose": "SOURCE",
+      "annotations": [
+        {
+          "annotator": "Tool: trivy-0.67.0",
+          "annotationDate": "2025-10-02T12:56:11Z",
+          "annotationType": "OTHER",
+          "comment": "SchemaVersion: 2"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Filesystem-313f3a882b3e1b53",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}

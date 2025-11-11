@@ -1,0 +1,12 @@
+
+Report Summary
+
+┌───────────────────────┬──────┬──────────┐
+│        Target         │ Type │ Licenses │
+├───────────────────────┼──────┼──────────┤
+│ Loose File License(s) │  -   │    0     │
+└───────────────────────┴──────┴──────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
