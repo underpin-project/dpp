@@ -11,6 +11,7 @@
     - [Makefile](#makefile)
     - [Exploring SPDX RDF](#exploring-spdx-rdf)
     - [SPDX RDF Basic Structure](#spdx-rdf-basic-structure)
+- [SPDX Ontology](#spdx-ontology)
 - [Sample Queries](#sample-queries)
     - [List all softwares with name, root package, download location](#list-all-softwares-with-name-root-package-download-location)
     - [List softwares with count of packages they contain or depend on](#list-softwares-with-count-of-packages-they-contain-or-depend-on)
@@ -148,6 +149,16 @@ grep -h spdx:relationshipType *.ttl|perl -pe 's{ +}{ }g'|sort|uniq -c
       8  spdx:relationshipType spdx:relationshipType_describes
 ```
 
+For easier loading, we concat all individual SPDX files to `ALL-spdx-2.3.zip`.
+After loading to GraphDB, we perform a basic exploration of classes and properties:
+```sparql
+select ?x (count(*) as ?c) {
+  {[] a ?x}
+  union {[] ?x []}
+} group by ?x order by ?x
+```
+TODO: paste table of results
+
 ## SPDX RDF Basic Structure
 The structure of the simplest SPDX of UNDERPIN software is like this:
 ```ttl
@@ -209,7 +220,40 @@ PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
         spdx:standardLicenseTemplate  "<<beginOptional>><<beginOptional>>Creative Commons...".
 ```
 
+# SPDX Ontology
+The [SPDX 3.0.1 ontology](https://spdx.org/rdf/3.0.1/spdx-model.ttl) describes SPDX terms and includes SHACL shapes for validating SPDX data.
+However, it doesn't fit our purposes since the data model has changed too much from 2.3 to 3.0.1
+- Namespace is versioned, eg
+```ttl
+@prefix ns1: <https://spdx.org/rdf/3.0.1/terms/Core/> .
+```
+- Namespace is broken up into sub-namespaces: `Core, Security, Sofware, AI, ExpandedLicensing`
+  (`spdx:` itself is used only for the ontology record).
+  Eg `SpdxDocument, Relationship, RelationshipType` live in `Core` but `Package` lives in `Software`.
+- Relationship representation has changed from this:
+
+```ttl
+<source> spdx:relationship 
+  [a spdx:Relationship;
+   spdx:relatedSpdxElement <target>;
+   spdx:relationshipType spdx:relationshipType_foo]
+```
+
+To this:
+
+```ttl
+[] a spdx:Relationship;
+   spdx:from <source>;
+   spdx:to <target>;
+   spdx:relationshipType <Core/RelationshipType/foo>]
+```
+
+So for now we don't load and use an ontology.
+In the future we may retrofit a SPDX 2.3 ontology by "downgrading" the 3.0.1 ontology.
+
 # Sample Queries
+- We load the SPDX ontology
+- We also load all DPPs as turlte (`*.ttl`)
 
 ## List all softwares with name, root package, download location
 ```sparql
