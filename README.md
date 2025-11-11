@@ -5,7 +5,7 @@
 
 - [UNDERPIN Software DPPs](#underpin-software-dpps)
 - [UNDERPIN Software](#underpin-software)
-- [Trivy SPDX 2.3 and Cyclone .6](#trivy-spdx-23-and-cyclone-6)
+- [Trivy SPDX 2.3 and Cyclone 1.6](#trivy-spdx-23-and-cyclone-16)
 - [SPDX Tools](#spdx-tools)
 - [SPDX Semantic Conversion](#spdx-semantic-conversion)
     - [Makefile](#makefile)
@@ -19,7 +19,7 @@
 <!-- markdown-toc end -->
 
 # UNDERPIN Software
-This folder includes sofware DPPs for the following UNDERPIN sofware:
+This folder includes sofware DPPs for the following UNDERPIN sofware components:
 - datavault
 - effector
 - knowds
@@ -31,9 +31,9 @@ This folder includes sofware DPPs for the following UNDERPIN sofware:
 
 DPPs for more software will be added in the near future, eg GraphDB.
 
-# Trivy SPDX 2.3 and Cyclone .6
+# Trivy SPDX 2.3 and Cyclone 1.6
 
-The software DPPs were made by [Trivy](https://trivy.dev/) and use the following formats:
+The software DPPs were made using [Trivy](https://trivy.dev/) and use the following formats:
 - license-report.txt: license report generated from SPDX
 - spdx-2.3.tag: [SPDX 2.3](https://spdx.github.io/spdx-spec/v2.3/) plain text (TAG)
 - spdx-2.3.json: [SPDX 2.3](https://spdx.github.io/spdx-spec/v2.3/) JSON
@@ -114,7 +114,7 @@ spdx Convert vocabulary-hub-spdx-2.3.json vocabulary-hub-spdx-2.3.ttl JSON RDFTT
 ## Exploring SPDX RDF
 
 SPDX describes packages, their licenses and dependencies.
-In addition to the root package, most UNDERPIN software includes a bunch of packages:
+In addition to the root, most UNDERPIN software includes a bunch of packages:
 ```
 $ grep -c spdx:Package *.ttl
 datavault-spdx-2.3.ttl:232
@@ -140,14 +140,15 @@ vocabulary-hub-spdx-2.3.ttl:1
 ```
 
 Here is a count of all relation types appearing in our SPDX.
-- As you see the root relation is `SpdxDocument-describes-Package`: there's only one per file
-- There are also relations between packages: `contains` and `dependsOn`
 ```
 grep -h spdx:relationshipType *.ttl|perl -pe 's{ +}{ }g'|sort|uniq -c
    1417  spdx:relationshipType spdx:relationshipType_contains
    9529  spdx:relationshipType spdx:relationshipType_dependsOn
       8  spdx:relationshipType spdx:relationshipType_describes
 ```
+- As you see in the turtle example below,  the root relation is `SpdxDocument - describes - Package`.
+  This is confirmed by the count: there's exactly one per file
+- There are also relations between packages: `contains` and `dependsOn`
 
 For easier loading, we concat all individual SPDX files to `ALL-spdx-2.3.zip`.
 After loading to GraphDB, we perform a basic exploration of classes and properties:
@@ -252,8 +253,6 @@ So for now we don't load and use an ontology.
 In the future we may retrofit a SPDX 2.3 ontology by "downgrading" the 3.0.1 ontology.
 
 # Sample Queries
-- We load the SPDX ontology
-- We also load all DPPs as turlte (`*.ttl`)
 
 ## List all softwares with name, root package, download location
 ```sparql
