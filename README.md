@@ -26,6 +26,8 @@
 
 # UNDERPIN Software
 This folder includes sofware DPPs for the following UNDERPIN sofware components:
+- GraphDB
+- PoolParty
 - datavault
 - effector
 - knowds
