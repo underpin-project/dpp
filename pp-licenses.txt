@@ -1,0 +1,1148 @@
+
+Report Summary
+
+┌───────────────────────┬──────┬──────────┐
+│        Target         │ Type │ Licenses │
+├───────────────────────┼──────┼──────────┤
+│ Loose File License(s) │  -   │   513    │
+└───────────────────────┴──────┴──────────┘
+Legend:
+- '-': Not scanned
+- '0': Clean (no security findings detected)
+
+
+Loose File License(s) (license)
+===============================
+Total: 513 (UNKNOWN: 10, LOW: 478, MEDIUM: 23, HIGH: 2, CRITICAL: 0)
+
+┌────────────────┬──────────┬──────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│ Classification │ Severity │             License              │                        File Location                         │
+├────────────────┼──────────┼──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ restricted     │ HIGH     │ GPL-2.0-with-classpath-exception │ index/solr/licenses/checker-qual-LICENSE-MIT.txt             │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ LGPL-2.1                         │ tomcat/webapps/PoolParty/lib/yui-2.9.0/assets/dpSyntaxHighl- │
+│                │          │                                  │ ighter.js                                                    │
+├────────────────┼──────────┼──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ reciprocal     │ MEDIUM   │ CDDL-1.0                         │ index/solr/licenses/activation-LICENSE-CDDL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/javax.servlet-api-LICENSE-CDDL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/servlet-api-LICENSE-CDDL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/LICENSE                                               │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ CDDL-1.1                         │ index/solr/licenses/gimap-LICENSE-CDDL.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/javax.mail-LICENSE-CDDL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jersey-core-LICENSE-CDDL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jersey-server-LICENSE-CDDL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jersey-servlet-LICENSE-CDDL.txt          │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ CPL-1.0                          │ index/solr/licenses/junit-LICENSE-CPL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/LICENSE                                               │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ EPL-1.0                          │ index/solr/licenses/aspectjrt-LICENSE-EPL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-LICENSE-ASL.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-schemas-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-scratchpad-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/LICENSE                                               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/yui-2.9.0/viz/COPYING.txt       │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ EPL-2.0                          │ index/solr/licenses/jakarta.annotation-api-LICENSE-EPL.txt   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jakarta.el-LICENSE-EPL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jakarta.servlet-api-LICENSE-EPL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jakarta.websocket-api-LICENSE-EPL.txt    │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ MPL-1.1                          │ index/solr/licenses/juniversalchardet-LICENSE-MPL.txt        │
+├────────────────┼──────────┼──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ notice         │ LOW      │ Apache-1.1                       │ index/solr/licenses/xercesImpl-LICENSE-ASL.txt               │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ Apache-2.0                       │ auth_service/keycloak/LICENSE.txt                            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ data/frontendRoot/default/map/OpenLayers.js                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ data/solr/searchdata/conf/stopwords.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ data/solr/tfidf/conf/mapping-ISOLatin1Accent.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/LICENSE.txt                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/README.txt                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/bin/install_solr_service.sh                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/bin/oom_solr.sh                                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/bin/solr.in.sh                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/SparseBitSet-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/android-json-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/annotations-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/ant-LICENSE-ASL.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/apache-client-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/apache-mime4j-core-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/apache-mime4j-dom-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/apiguardian-api-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/arns-LICENSE-ASL.txt                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/asciidoctor-ant-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/auth-LICENSE-ASL.txt                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/auto-value-annotations-LICENSE-ASL.txt   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/avatica-core-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/aws-core-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/aws-java-sdk-core-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/aws-java-sdk-s3-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/aws-query-protocol-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/aws-xml-protocol-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/boilerpipe-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/boilerpipe-NOTICE.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/byte-buddy-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/caffeine-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/calcite-core-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/calcite-linq4j-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-cli-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-codec-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-collections-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-collections4-LICENSE-ASL.txt     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-compress-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-configuration-LICENSE-ASL.txt    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-configuration2-LICENSE-ASL.txt   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-csv-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-digester-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-exec-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-io-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-lang-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-lang3-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-logging-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-math3-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-text-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/curator-client-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/curator-framework-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/curator-recipes-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/derby-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/disruptor-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/eigenbase-properties-LICENSE-ASL.txt     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/eigenbase-properties-NOTICE.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/error_prone_annotations-LICENSE-ASL.txt  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/esri-geometry-api-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/failureaccess-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/fontbox-LICENSE-ASL.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-api-client-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-api-services-storage-LICENSE-ASL- │
+│                │          │                                  │ .txt                                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-api-services-storage-v1-rev20210- │
+│                │          │                                  │ 127-LICENSE-ASL.txt                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-cloud-core-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-cloud-core-http-LICENSE-ASL.txt   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-cloud-nio-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-cloud-storage-LICENSE-ASL.txt     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-http-client-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-http-client-apache-v2-LICENSE-AS- │
+│                │          │                                  │ L.txt                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-http-client-appengine-LICENSE-AS- │
+│                │          │                                  │ L.txt                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-http-client-jackson2-LICENSE-ASL- │
+│                │          │                                  │ .txt                                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-oauth-client-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/grpc-context-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/grpc-context-NOTICE.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/gson-LICENSE-ASL.txt                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/guava-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-annotations-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-auth-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-common-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-common-tests-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-hdfs-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-hdfs-client-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-hdfs-tests-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-minicluster-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-minikdc-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hppc-LICENSE-ASL.txt                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/htrace-core4-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/http-client-spi-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/http2-client-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/http2-common-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/http2-hpack-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/http2-http-client-transport-LICENSE-ASL- │
+│                │          │                                  │ .txt                                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/http2-server-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/httpclient-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/httpcore-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/httpmime-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/ion-java-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/isoparser-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/j2objc-annotations-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackcess-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackcess-encrypt-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackson-dataformat-smile-LICENSE-ASL.txt │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackson-dataformat-xml-LICENSE-ASL.txt   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackson-datatype-jdk8-LICENSE-ASL.txt    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackson-datatype-jsr310-LICENSE-ASL.txt  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackson-jq-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackson-module-jaxb-annotations-LICENSE- │
+│                │          │                                  │ -ASL.txt                                                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jackson-module-parameter-names-LICENSE-- │
+│                │          │                                  │ ASL.txt                                                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jaeger-core-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jaeger-thrift-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/java-libpst-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/javax.inject-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jempbox-LICENSE-ASL.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jetty-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/joda-time-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jose4j-LICENSE-ASL.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/json-path-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/json-utils-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jsonic-LICENSE-ASL.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/junit4-ant-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-admin-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-client-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-common-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-core-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-crypto-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-identity-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-server-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-simplekdc-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerb-util-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerby-asn1-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerby-config-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerby-kdc-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerby-pkix-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/kerby-util-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/libthrift-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/listenablefuture-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/log4j-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/log4j-api-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/log4j-core-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/log4j-layout-template-json-LICENSE-ASL.- │
+│                │          │                                  │ txt                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/log4j-slf4j-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/log4j-web-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-core-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-graphite-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-jetty-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-jmx-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-json-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-jvm-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-servlets-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/metrics-spi-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/micrometer-core-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/micrometer-core-NOTICE.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/mina-core-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/morfologik-ukrainian-search-LICENSE-ASL- │
+│                │          │                                  │ .txt                                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-all-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-all-NOTICE.txt                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-buffer-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-buffer-NOTICE.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-codec-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-codec-NOTICE.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-common-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-common-NOTICE.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-handler-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-handler-NOTICE.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-resolver-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-resolver-NOTICE.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-transport-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-transport-NOTICE.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-transport-native-epoll-LICENSE-AS- │
+│                │          │                                  │ L.txt                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-transport-native-epoll-NOTICE.txt  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-transport-native-unix-common-LICE- │
+│                │          │                                  │ NSE-ASL.txt                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/netty-transport-native-unix-common-NOTI- │
+│                │          │                                  │ CE.txt                                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/objenesis-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/opencensus-api-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/opencensus-contrib-http-util-LICENSE-AS- │
+│                │          │                                  │ L.txt                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/opennlp-tools-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/opentracing-api-LICENSE-ASL.txt          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/opentracing-mock-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/opentracing-noop-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/opentracing-util-LICENSE-ASL.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/parso-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/parso-NOTICE.txt                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/pdfbox-LICENSE-ASL.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/pdfbox-tools-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-LICENSE-ASL.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-schemas-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-scratchpad-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/presto-parser-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/profiles-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/proto-google-common-protos-LICENSE-ASL.- │
+│                │          │                                  │ txt                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/proto-google-iam-v1-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/protocol-core-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/randomizedtesting-runner-LICENSE-ASL.txt │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/regions-LICENSE-ASL.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/rome-LICENSE-ASL.txt                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/rome-utils-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/rrd4j-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/s2-geometry-library-java-LICENSE-ASL.txt │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/s3-LICENSE-ASL.txt                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/s3mock-LICENSE-ASL.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/s3mock-junit4-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/s3mock-testsupport-common-LICENSE-ASL.t- │
+│                │          │                                  │ xt                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/sdk-core-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/simpleclient-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/simpleclient_common-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/simpleclient_httpserver-LICENSE-ASL.txt  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/slice-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/snakeyaml-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/snappy-java-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spatial4j-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-aop-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-beans-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-actuator-LICENSE-ASL.txt     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-actuator-autoconfigure-LICE- │
+│                │          │                                  │ NSE-ASL.txt                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-autoconfigure-LICENSE-ASL.t- │
+│                │          │                                  │ xt                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-starter-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-starter-actuator-LICENSE-AS- │
+│                │          │                                  │ L.txt                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-starter-jetty-LICENSE-ASL.t- │
+│                │          │                                  │ xt                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-starter-json-LICENSE-ASL.txt │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-starter-logging-LICENSE-ASL- │
+│                │          │                                  │ .txt                                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-boot-starter-web-LICENSE-ASL.txt  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-context-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-core-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-expression-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-jcl-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-web-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/spring-webmvc-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/t-digest-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tagsoup-LICENSE-ASL.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/third-party-jackson-core-LICENSE-ASL.txt │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-core-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-java7-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-parsers-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-xmp-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/url-connection-client-LICENSE-ASL.txt    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/utils-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/velocity-engine-core-LICENSE-ASL.txt     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/velocity-tools-generic-LICENSE-ASL.txt   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/velocity-tools-view-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/velocity-tools-view-jsp-LICENSE-ASL.txt  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/woodstox-core-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/woodstox-core-asl-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/xml-apis-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/xmlbeans-LICENSE-ASL.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/zookeeper-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/zookeeper-jute-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/README.txt                                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/analysis.c- │
+│                │          │                                  │ ss                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/cloud.css   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/collection- │
+│                │          │                                  │ s.css                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/common.css  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/cores.css   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/dashboard.- │
+│                │          │                                  │ css                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/dataimport- │
+│                │          │                                  │ .css                                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/documents.- │
+│                │          │                                  │ css                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/files.css   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/index.css   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/java-prope- │
+│                │          │                                  │ rties.css                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/logging.css │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/login.css   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/menu.css    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/overview.c- │
+│                │          │                                  │ ss                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/plugins.css │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/query.css   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/replicatio- │
+│                │          │                                  │ n.css                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/schema-des- │
+│                │          │                                  │ igner.css                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/schema.css  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/security.c- │
+│                │          │                                  │ ss                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/segments.c- │
+│                │          │                                  │ ss                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/stream.css  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/suggestion- │
+│                │          │                                  │ s.css                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/threads.css │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/index.html              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/app.js       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /alias-overview.js                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /analysis.js                                                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /cloud.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /cluster-suggestions.js                                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /collection-overview.js                                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /collections.js                                              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /core-overview.js                                            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /cores.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /dataimport.js                                               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /documents.js                                                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /files.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /index.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /java-properties.js                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /logging.js                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /login.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /plugins.js                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /query.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /replication.js                                              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /schema-designer.js                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /schema.js                                                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /security.js                                                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /segments.js                                                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /stream.js                                                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /threads.js                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/controllers- │
+│                │          │                                  │ /unknown.js                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/js/angular/services.js  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular-utf8-base- │
+│                │          │                                  │ 64.min.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/alias_overvie- │
+│                │          │                                  │ w.html                                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/analysis.html  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/cloud.html     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/cluster_sugge- │
+│                │          │                                  │ stions.html                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/collection_ov- │
+│                │          │                                  │ erview.html                                                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/collections.h- │
+│                │          │                                  │ tml                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/core_overview- │
+│                │          │                                  │ .html                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/cores.html     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/dataimport.ht- │
+│                │          │                                  │ ml                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/documents.html │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/files.html     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/index.html     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/java-properti- │
+│                │          │                                  │ es.html                                                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/logging-level- │
+│                │          │                                  │ s.html                                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/logging.html   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/login.html     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/plugins.html   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/query.html     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/replication.h- │
+│                │          │                                  │ tml                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/schema-design- │
+│                │          │                                  │ er.html                                                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/schema.html    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/security.html  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/segments.html  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/stream.html    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/threads.html   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/partials/unknown.html   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/README.txt                            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/_default/conf/lang/stopwo- │
+│                │          │                                  │ rds_en.txt                                                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/_default/conf/protwords.t- │
+│                │          │                                  │ xt                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/_default/conf/stopwords.t- │
+│                │          │                                  │ xt                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/_default/conf/synonyms.txt │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/sample_techproducts_confi- │
+│                │          │                                  │ gs/conf/lang/stopwords_en.txt                                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/sample_techproducts_confi- │
+│                │          │                                  │ gs/conf/mapping-FoldToASCII.txt                              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/sample_techproducts_confi- │
+│                │          │                                  │ gs/conf/mapping-ISOLatin1Accent.txt                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/sample_techproducts_confi- │
+│                │          │                                  │ gs/conf/protwords.txt                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/sample_techproducts_confi- │
+│                │          │                                  │ gs/conf/stopwords.txt                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr/configsets/sample_techproducts_confi- │
+│                │          │                                  │ gs/conf/synonyms.txt                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/BUILDING.txt                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/LICENSE                                               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/RUNNING.txt                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/catalina.sh                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/ciphers.sh                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/configtest.sh                                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/daemon.sh                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/digest.sh                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/makebase.sh                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/setclasspath.sh                                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/shutdown.sh                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/startup.sh                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/tool-wrapper.sh                                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/bin/version.sh                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/WEB-INF/classes/at/punkt/PoolParty- │
+│                │          │                                  │ /resources/default/default/map/OpenLayers.js                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.4.0-DE-SNAPSHOT/vendors.js   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.4.0/vendors.js               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.5.0-SNAPSHOT/vendors.js      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/SimpleDateFormat.js             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/extractor/static/css/selectize.default.css    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/manager/css/manager.css                       │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ BSD-2-Clause                     │ index/solr/licenses/commons-math3-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/morfologik-polish-LICENSE-BSD.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/stax2-api-LICENSE-BSD.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-core-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-xmp-LICENSE-ASL.txt                 │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ BSD-3-Clause                     │ data/frontendRoot/default/map/OpenLayers.js                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/NOTICE.txt                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/antlr4-runtime-LICENSE-BSD.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/api-common-LICENSE-BSD.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/asm-LICENSE-BSD.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/asm-LICENSE-BSD_LIKE.txt                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/asm-commons-LICENSE-BSD_LIKE.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-compiler-LICENSE-BSD.txt         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/commons-math3-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/curvesapi-LICENSE-BSD_LIKE.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/fontbox-LICENSE-ASL.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/gax-LICENSE-BSD.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/gax-httpjson-LICENSE-BSD.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-auth-library-credentials-LICENSE- │
+│                │          │                                  │ -BSD.txt                                                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/google-auth-library-oauth2-http-LICENSE- │
+│                │          │                                  │ -BSD.txt                                                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-annotations-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-auth-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-common-LICENSE-ASL.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-common-tests-LICENSE-ASL.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-hdfs-LICENSE-ASL.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-hdfs-client-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-hdfs-tests-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-minicluster-LICENSE-ASL.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hadoop-minikdc-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hamcrest-core-LICENSE-BSD.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hsqldb-LICENSE-BSD_LIKE.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/hsqldb-NOTICE.txt                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jakarta.xml.bind-api-LICENSE-BSD_LIKE.t- │
+│                │          │                                  │ xt                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/janino-LICENSE-BSD.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jdom2-LICENSE-BSD_LIKE.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jempbox-LICENSE-ASL.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jmatio-LICENSE-BSD.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/morfologik-fsa-LICENSE-BSD.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/morfologik-stemming-LICENSE-BSD.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/parso-LICENSE-ASL.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/parso-NOTICE.txt                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/pdfbox-LICENSE-ASL.txt                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/pdfbox-tools-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-LICENSE-ASL.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-schemas-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-scratchpad-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/protobuf-java-LICENSE-BSD.txt            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/protobuf-java-util-LICENSE-BSD.txt       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/re2j-LICENSE-BSD_LIKE.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/threetenbp-LICENSE-BSD.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/vorbis-java-core-LICENSE-BSD_LIKE.txt    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/vorbis-java-tika-LICENSE-BSD_LIKE.txt    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/xmpcore-shaded-LICENSE-BSD.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/d3.js              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/highlight.js       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/WEB-INF/classes/at/punkt/PoolParty- │
+│                │          │                                  │ /resources/default/default/map/OpenLayers.js                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/yui-2.9.0/build/animation/anim- │
+│                │          │                                  │ ation-debug.js                                               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/yui-2.9.0/build/animation/anim- │
+│                │          │                                  │ ation-min.js                                                 │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/yui-2.9.0/build/animation/anim- │
+│                │          │                                  │ ation.js                                                     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/yui-2.9.0/build/utilities/util- │
+│                │          │                                  │ ities.js                                                     │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ MIT                              │ index/solr/LICENSE.txt                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/NOTICE.txt                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/argparse4j-LICENSE-MIT.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/avatica-core-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/bcmail-LICENSE-BSD_LIKE.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/bcpkix-jdk15on-LICENSE-BSD_LIKE.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/bcprov-LICENSE-BSD_LIKE.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/calcite-core-LICENSE-ASL.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/calcite-linq4j-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/checker-compat-qual-LICENSE-MIT.txt      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/checker-qual-LICENSE-MIT.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/dec-LICENSE-MIT.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/dec-NOTICE.txt                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/java-semver-LICENSE-MIT.txt              │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jcl-over-slf4j-LICENSE-MIT.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jcl-over-slf4j-NOTICE.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jsoup-LICENSE-MIT.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jul-to-slf4j-LICENSE-MIT.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jul-to-slf4j-NOTICE.txt                  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/mina-core-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/mockito-core-LICENSE-MIT.txt             │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-LICENSE-ASL.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-LICENSE-ASL.txt                │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-ooxml-schemas-LICENSE-ASL.txt        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/poi-scratchpad-LICENSE-ASL.txt           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/slf4j-LICENSE-MIT.txt                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/slf4j-NOTICE.txt                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/angular-cs- │
+│                │          │                                  │ p.css                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/chosen.css  │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/jquery-ui.- │
+│                │          │                                  │ min.css                                                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/jquery-ui.- │
+│                │          │                                  │ structure.min.css                                            │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/css/angular/jstree.sty- │
+│                │          │                                  │ le.min.css                                                   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular-chosen.mi- │
+│                │          │                                  │ n.js                                                         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular-cookies.m- │
+│                │          │                                  │ in.js                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular-resource.- │
+│                │          │                                  │ min.js                                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular-route.min- │
+│                │          │                                  │ .js                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular-sanitize.- │
+│                │          │                                  │ min.js                                                       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular-utf8-base- │
+│                │          │                                  │ 64.min.js                                                    │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/angular.min.js     │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/chosen.jquery.min- │
+│                │          │                                  │ .js                                                          │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/jquery-3.5.1.min.- │
+│                │          │                                  │ js                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/jquery-ui.min.js   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/jstree.min.js      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/server/solr-webapp/webapp/libs/ngtimeago.js       │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.4.0-DE-SNAPSHOT/editor.work- │
+│                │          │                                  │ er.js                                                        │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.4.0-DE-SNAPSHOT/vendors.js   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.4.0/editor.worker.js         │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.4.0/vendors.js               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.5.0-SNAPSHOT/editor.worker.- │
+│                │          │                                  │ js                                                           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.5.0-SNAPSHOT/vendors.js      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/sparqlshell/sparql.js           │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/lib/yui-2.9.0/viz/COPYING.txt       │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ W3C                              │ index/solr/licenses/ant-LICENSE-ASL.txt                      │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/jose4j-LICENSE-ASL.txt                   │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ Zlib                             │ tomcat/LICENSE                                               │
+├────────────────┼──────────┼──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ unknown        │ UNKNOWN  │ ANTLR                            │ index/solr/NOTICE.txt                                        │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ BSD-0-Clause                     │ tomcat/webapps/PoolParty/dist/9.4.0-DE-SNAPSHOT/vendors.js   │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.4.0/vendors.js               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ tomcat/webapps/PoolParty/dist/9.5.0-SNAPSHOT/vendors.js      │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ Entenssa                         │ index/solr/licenses/commons-math3-LICENSE-ASL.txt            │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ ICU                              │ index/solr/licenses/icu4j-LICENSE-BSD_LIKE.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-java7-LICENSE-ASL.txt               │
+│                │          │                                  ├──────────────────────────────────────────────────────────────┤
+│                │          │                                  │ index/solr/licenses/tika-parsers-LICENSE-ASL.txt             │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ NAIST-2003                       │ index/solr/NOTICE.txt                                        │
+│                │          ├──────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ bzip2                            │ tomcat/LICENSE                                               │
+└────────────────┴──────────┴──────────────────────────────────┴──────────────────────────────────────────────────────────────┘
