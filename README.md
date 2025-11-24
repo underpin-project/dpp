@@ -15,6 +15,8 @@
 - [Sample Queries](#sample-queries)
     - [List all softwares with name, root package, download location](#list-all-softwares-with-name-root-package-download-location)
     - [List softwares with count of packages they contain or depend on](#list-softwares-with-count-of-packages-they-contain-or-depend-on)
+    - [List licenses per count](#list-licenses-per-count)
+- [Visual Graph Configuration](#visual-graph-configuration)
 - [Contributions to SPDX](#contributions-to-spdx)
     - [Modeling of Identifiers](#modeling-of-identifiers)
     - [Reusing Prior Modeling Efforts](#reusing-prior-modeling-efforts)
@@ -134,7 +136,8 @@ refinery-uc-spdx-2.3.ttl:1
 semantic-search-spdx-2.3.ttl:2626
 vocabulary-hub-spdx-2.3.ttl:1
 ```
-So how do we find the root package? It's described in the sole `SpdxDocument` per software:
+So how do we find the root packages?
+- They are described in the sole `SpdxDocument` per SPDX file:
 ```
 $ grep -c spdx:SpdxDocument *.ttl
 datavault-spdx-2.3.ttl:1
@@ -146,6 +149,7 @@ refinery-uc-spdx-2.3.ttl:1
 semantic-search-spdx-2.3.ttl:1
 vocabulary-hub-spdx-2.3.ttl:1
 ```
+- Also, root packages are the only ones that have `spdx:primaryPackagePurpose spdx:purpose_source`
 
 Here is a count of all relation types appearing in our SPDX.
 ```
@@ -263,11 +267,14 @@ In the future we may retrofit a SPDX 2.3 ontology by "downgrading" the 3.0.1 ont
 # Sample Queries
 
 ## List all softwares with name, root package, download location
+Cleans up the name by removing some prefixes and suffixes
 ```sparql
 select ?root ?name ?download {
   ?doc a spdx:SpdxDocument;
      spdx:relationship [spdx:relationshipType spdx:relationshipType_describes; spdx:relatedSpdxElement ?root].
-  ?root spdx:name ?name.
+  ?root spdx:name ?name1.
+  bind(replace(replace(?name1,"usr/local/lib/python.*/site-packages/(.*)/METADATA","$1"),
+      "^C:/Users/nkape/|^urn:|/opt/|tomcat/webapps/PoolParty/WEB-INF/lib/|app/app.jar/BOOT-INF/lib/|.tar.gz$|.tar$|.jar$","") as ?name)
   optional {?root spdx:downloadLocation ?download}
 }
 ```
@@ -275,16 +282,101 @@ select ?root ?name ?download {
 ## List softwares with count of packages they contain or depend on
 The count of packages is an indication of the complexity of the software:
 ```sparql
-select ?root ?name (count(distinct ?pkg) as ?c) {
+PREFIX spdx: <http://spdx.org/rdf/terms#>
+select ?name (count(distinct ?pkg) as ?c) {
   [] spdx:relationshipType spdx:relationshipType_describes; spdx:relatedSpdxElement ?root.
-  ?root spdx:name ?name.
+  ?root spdx:name ?name1;
     (spdx:relationship/spdx:relatedSpdxElement)+ ?pkg
-} group by ?root ?name
+  bind(replace(replace(?name1,"usr/local/lib/python.*/site-packages/(.*)/METADATA","$1"),
+      "^C:/Users/nkape/|^urn:|/opt/|tomcat/webapps/PoolParty/WEB-INF/lib/|app/app.jar/BOOT-INF/lib/|.tar.gz$|.tar$|.jar$","") as ?name)
+} group by ?root ?name order by desc(?c)
 ```
 - The query relies on the fact that out of the root, all relations are either `contains` or `dependsOn`, so we can disregard the relation type
 - On the other hand, it's common for a low-level package to be included multiple times through different packages, 
   so we don't just count the number of relations and we take `distinct ?pkg`.
-  
+
+| name                          |    c |
+|-------------------------------|------|
+| poolparty                     | 4242 |
+| app-search-reference-ui-react | 2625 |
+| graphdb-10.8.1-dist           | 1215 |
+| pred-main-service             |  912 |
+| knowds                        |  604 |
+| effector-xai                  |  444 |
+| metadatasyncservice           |  343 |
+| data-source                   |  231 |
+
+## List licenses per count
+This query shows all open source licenses used by UNDERPIN software in descending order of number of uses.
+It takes care of some peculiarities:
+- "Conjunctive" licenses are represented as a blank nodes where `spdx:member` lists the constituent licenses
+- `ExtractedLicensingInfo` doesn't bind to a formal license URL with `licenseId`, but we can use `name` that is well-structured
+```sparql
+PREFIX spdx: <http://spdx.org/rdf/terms#>
+select ?license (count(*) as ?c) {
+  ?x spdx:licenseDeclared/spdx:member? ?lic .
+  optional {?lic spdx:name ?name}
+  optional {?lic spdx:licenseId ?id}
+  filter(?lic != spdx:noassertion && (!bound(?name) || ?name!="NOASSERTION") && !isBlank(?lic))
+  bind(if(exists{?lic a spdx:ExtractedLicensingInfo},?name,?id) as ?license)
+} group by ?license order by desc(?c)
+```
+There are 324 unique license strings. Here are the top 15 or so:
+| license           |    c |
+|-------------------|------|
+| MIT               | 2648 |
+| BSD-3-Clause      |  511 |
+| GPL-2.0-only      |  476 |
+| GPL-2.0-or-later  |  408 |
+| Apache-2.0        |  388 |
+| GPL-3.0-only      |  252 |
+| LGPL-2.1-only     |  240 |
+| ISC               |  239 |
+| BSD-2-Clause      |  226 |
+| LGPL-2.1-or-later |  196 |
+| GPL-3.0-or-later  |  190 |
+| LGPL-2.0-or-later |  168 |
+| CC0-1.0           |  158 |
+| LGPL-2.0-only     |  142 |
+| LGPL-3.0-only     |  141 |
+| LGPL-3.0-or-later |  134 |
+| public-domain     |  133 |
+
+
+# Visual Graph Configuration
+Graph config DPP: "Root packages; expand them to show dependencies".
+
+Starting point:
+- Makes a "synthetic" central node `UNDERPIN` and attaches all root software packages to it using a "synthetic" property `consistsOf`:
+```sparql
+PREFIX spdx: <http://spdx.org/rdf/terms#>
+construct {<urn:UNDERPIN> spdx:consistsOf ?root}
+where {
+  ?root spdx:primaryPackagePurpose spdx:purpose_source
+}
+```
+Graph expansion:
+```sparql
+PREFIX spdx: <http://spdx.org/rdf/terms#>
+construct {?node spdx:dependsOn ?package}
+where {
+  ?node spdx:relationship / spdx:relatedSpdxElement ?package 
+}
+```
+Node basics:
+- Finds a node name using 3 alternatives (`name, fileName` or the node's URI)
+- Cleans up the name by removing prefixes (related to folders etc) and suffixes like `.tar.gz, .tar, .jar`
+```sparql
+PREFIX spdx: <http://spdx.org/rdf/terms#>
+select * {
+  optional {?node spdx:name|spdx:fileName ?name}
+  optional {?node spdx:primaryPackagePurpose ?type}
+  bind(coalesce(?name,str(?node)) as ?name1)
+    bind(replace(replace(?name1,"usr/local/lib/python.*/site-packages/(.*)/METADATA","$1"),
+      "^C:/Users/nkape/|^urn:|/opt/|tomcat/webapps/PoolParty/WEB-INF/lib/|app/app.jar/BOOT-INF/lib/|.tar.gz$|.tar$|.jar$","") as ?label)
+}
+```
+
 # Contributions to SPDX
 We have made multiple contributions to the SPDX ontology and data model through Github issues, discussions and participation in WG meetings.
 
