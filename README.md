@@ -377,6 +377,10 @@ select * {
 }
 ```
 
+For example, here is a saved graph [DPP-dataSource](https://graphdb.dataspace.underpinproject.eu/graphs-visualizations?saved=d7c4bd58e1c54d81aa413541ef63af4b) that shows the constituent modules of the `data-source` software (which consists of two modules: frontend and backend):
+
+![](dpp-dataSource.png)
+
 # Contributions to SPDX
 We have made multiple contributions to the SPDX ontology and data model through Github issues, discussions and participation in WG meetings.
 
