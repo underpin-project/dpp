@@ -4,8 +4,9 @@
 **Table of Contents**
 
 - [UNDERPIN Software DPPs](#underpin-software-dpps)
-- [UNDERPIN Software](#underpin-software)
-- [Trivy SPDX 2.3 and Cyclone 1.6](#trivy-spdx-23-and-cyclone-16)
+- [UNDERPIN Software DPPs](#underpin-software-dpps-1)
+    - [Trivy SPDX 2.3 and Cyclone 1.6 Formats](#trivy-spdx-23-and-cyclone-16-formats)
+    - [License Reports](#license-reports)
 - [SPDX Tools](#spdx-tools)
 - [SPDX Semantic Conversion](#spdx-semantic-conversion)
     - [Makefile](#makefile)
@@ -13,9 +14,11 @@
     - [SPDX RDF Basic Structure](#spdx-rdf-basic-structure)
 - [SPDX Ontology](#spdx-ontology)
 - [Sample Queries](#sample-queries)
-    - [List all softwares with name, root package, download location](#list-all-softwares-with-name-root-package-download-location)
-    - [List softwares with count of packages they contain or depend on](#list-softwares-with-count-of-packages-they-contain-or-depend-on)
+    - [Explore SPDX Classes and Properties](#explore-spdx-classes-and-properties)
+    - [List all softwares](#list-all-softwares)
+    - [Softwares with count of packages](#softwares-with-count-of-packages)
     - [List licenses per count](#list-licenses-per-count)
+    - [Licenses per Software](#licenses-per-software)
 - [Visual Graph Configuration](#visual-graph-configuration)
 - [Contributions to SPDX](#contributions-to-spdx)
     - [Modeling of Identifiers](#modeling-of-identifiers)
@@ -26,28 +29,120 @@
 
 <!-- markdown-toc end -->
 
-# UNDERPIN Software
-This folder includes sofware DPPs for the following UNDERPIN sofware components:
-- GraphDB
-- PoolParty
-- datavault
-- effector
-- knowds
-- metadata-sync-service
-- predictive-analytics-windfarm
-- refinery-uc
-- semantic-search
-- vocabulary-hub
+# UNDERPIN Software DPPs
+This Github repository includes sofware DPPs for all UNDERPIN sofware components:
+- GraphDB: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/GraphDB-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/GraphDB-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/GraphDB-spdx-2.3.ttl); [license](https://raw.githack.com/underpin-project/dpp/main/GraphDB-license-report.txt)
+- PoolParty: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/PoolParty-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/PoolParty-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/PoolParty-spdx-2.3.ttl); [license](https://raw.githack.com/underpin-project/dpp/main/PoolParty-license-report.txt)
+- datavault: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/datavault-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/datavault-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/datavault-spdx-2.3.ttl)
+- effector: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/effector-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/effector-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/effector-spdx-2.3.ttl)
+- knowds: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/knowds-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/knowds-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/knowds-spdx-2.3.ttl); [license](https://raw.githack.com/underpin-project/dpp/main/knowds-license-report.txt)
+- metadata-sync-service: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/metadata-sync-service-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/metadata-sync-service-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/metadata-sync-service-spdx-2.3.ttl); [license](https://raw.githack.com/underpin-project/dpp/main/metadata-sync-service-license-report.txt)
+- predictive-analytics-windfarm: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/predictive-analytics-windfarm-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/predictive-analytics-windfarm-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/predictive-analytics-windfarm-spdx-2.3.ttl); [license](https://raw.githack.com/underpin-project/dpp/main/predictive-analytics-windfarm-license-report.txt); CycloneDX [json](https://raw.githack.com/underpin-project/dpp/main/predictive/analytics-cyclonedx-1.6.json)
+- refinery-uc: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/refinery-uc-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/refinery-uc-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/refinery-uc-spdx-2.3.ttl); [license](https://raw.githack.com/underpin-project/dpp/main/refinery-uc-license-report.txt); CycloneDX [json](https://raw.githack.com/underpin-project/dpp/main/refinery-uc-cyclonedx-1.6.json)
+- semantic-search: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/semantic-search-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/semantic-search-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/semantic-search-spdx-2.3.ttl); [license](https://raw.githack.com/underpin-project/dpp/main/semantic-search-license-report.txt)
+- vocabulary-hub: SPDX 2.3 [tag](https://raw.githack.com/underpin-project/dpp/main/vocabulary-hub-spdx-2.3.tag), [json](https://raw.githack.com/underpin-project/dpp/main/vocabulary-hub-spdx-2.3.json), [ttl](https://raw.githack.com/underpin-project/dpp/main/vocabulary-hub-spdx-2.3.ttl)
 
-DPPs for more software will be added in the near future, eg GraphDB.
+The UNDERPIN GraphDB semantic database has a repository `dpp` where this information is loaded and can be explored:
+- SPARQL editor: https://graphdb.dataspace.underpinproject.eu/sparql
+- SPARQL endpoint: https://graphdb.dataspace.underpinproject.eu/repositories/dpp
 
-# Trivy SPDX 2.3 and Cyclone 1.6
+See these sections for extra information
+- [Sample Queries](#sample-queries) that you can try
+- [Visual Graph Configuration](#visual-graph-configuration) where you can explore packages and their dependencies
+
+## Trivy SPDX 2.3 and Cyclone 1.6 Formats
 
 The software DPPs were made using [Trivy](https://trivy.dev/) and use the following formats:
-- license-report.txt: license report generated from SPDX
+- license-report.txt: license report generated by SPDX
 - spdx-2.3.tag: [SPDX 2.3](https://spdx.github.io/spdx-spec/v2.3/) plain text (TAG)
 - spdx-2.3.json: [SPDX 2.3](https://spdx.github.io/spdx-spec/v2.3/) JSON
+- spdx-2.3.ttl: [SPDX 2.3](https://spdx.github.io/spdx-spec/v2.3/) RDF Turtle (converted with SPDX Tools, see below)
 - cyclonedx-1.6.json: [CycloneDX 1.6 JSON](https://cyclonedx.org/docs/1.6/json/)
+
+## License Reports
+SPDX has generated License Reports for almost all of the UNDERPIN softwares.
+- E.g. below is the license report for GraphDB
+- Please note that the semantic query [List licenses per count](#list-licenses-per-count) below shows a flexible way to query this information, eg do counts per license across all softwares.
+
+```
+┌────────────────┬──────────┬────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
+│ Classification │ Severity │              License               │                        File Location                         │
+├────────────────┼──────────┼────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ restricted     │ HIGH     │ GPL-2.0                            │ graphdb-10.8.1/doc/THIRD_PARTY_LICENSES.html                 │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ GPL-2.0-with-classpath-exception   │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ LGPL-2.1                           │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ LGPL-3.0                           │                                                              │
+├────────────────┼──────────┼────────────────────────────────────┤                                                              │
+│ reciprocal     │ MEDIUM   │ CDDL-1.0                           │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ EPL-1.0                            │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ EPL-2.0                            │                                                              │
+├────────────────┼──────────┼────────────────────────────────────┤                                                              │
+│ unencumbered   │ LOW      │ CC0-1.0                            │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ Unlicense                          │                                                              │
+├────────────────┤          ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ notice         │          │ Apache-2.0                         │ graphdb-10.8.1/configs/solr-home/collection1/conf/lang/stop- │
+│                │          │                                    │ words_en.txt                                                 │
+│                │          │                                    ├──────────────────────────────────────────────────────────────┤
+│                │          │                                    │ graphdb-10.8.1/configs/solr-home/collection1/conf/protwords- │
+│                │          │                                    │ .txt                                                         │
+│                │          │                                    ├──────────────────────────────────────────────────────────────┤
+│                │          │                                    │ graphdb-10.8.1/configs/solr-home/collection1/conf/stopwords- │
+│                │          │                                    │ .txt                                                         │
+│                │          │                                    ├──────────────────────────────────────────────────────────────┤
+│                │          │                                    │ graphdb-10.8.1/configs/solr-home/collection1/conf/synonyms.- │
+│                │          │                                    │ txt                                                          │
+│                │          │                                    ├──────────────────────────────────────────────────────────────┤
+│                │          │                                    │ graphdb-10.8.1/doc/THIRD_PARTY_LICENSES.html                 │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ BSD-2-Clause                       │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ BSD-3-Clause                       │                                                              │
+│                │          │                                    ├──────────────────────────────────────────────────────────────┤
+│                │          │                                    │ graphdb-10.8.1/lib/workbench/14.e4770ab66956f0aae86e.bundle- │
+│                │          │                                    │ .js                                                          │
+│                │          ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ CC-BY-4.0                          │ graphdb-10.8.1/doc/THIRD_PARTY_LICENSES.html                 │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ ISC                                │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ MIT                                │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ OpenSSL                            │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ Python-2.0                         │                                                              │
+├────────────────┼──────────┼────────────────────────────────────┤                                                              │
+│ unknown        │ UNKNOWN  │ BSD-0-Clause                       │                                                              │
+│                │          │                                    ├──────────────────────────────────────────────────────────────┤
+│                │          │                                    │ graphdb-10.8.1/lib/workbench/0.93ef946b5d439221c394.bundle.- │
+│                │          │                                    │ js                                                           │
+│                │          ├────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                │          │ BeOpen                             │ graphdb-10.8.1/doc/THIRD_PARTY_LICENSES.html                 │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ CNRI-Python-GPL-Compatible         │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ Copyright                          │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ Elastic-2.0                        │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ Entenssa                           │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ GNU-All-permissive-Copying-License │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ ICU                                │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ OFL-1.1                            │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ SSPL-1.0                           │                                                              │
+│                │          ├────────────────────────────────────┤                                                              │
+│                │          │ unicode_org                        │                                                              │
+└────────────────┴──────────┴────────────────────────────────────┴──────────────────────────────────────────────────────────────┘
+```
 
 # SPDX Tools
 
@@ -124,7 +219,10 @@ spdx Convert vocabulary-hub-spdx-2.3.json vocabulary-hub-spdx-2.3.ttl JSON RDFTT
 ## Exploring SPDX RDF
 
 SPDX describes packages, their licenses and dependencies.
-In addition to the root, most UNDERPIN software includes a bunch of packages:
+See query [Explore SPDX Classes and Properties](#explore-spdx-classes-and-properties) for an exploration based on SPARQL.
+But below we perform a simpler exploration based on files.
+
+In addition to the root package, most UNDERPIN software uses a bunch of subsidiary (library) packages:
 ```
 $ grep -c spdx:Package *.ttl
 datavault-spdx-2.3.ttl:232
@@ -137,6 +235,7 @@ semantic-search-spdx-2.3.ttl:2626
 vocabulary-hub-spdx-2.3.ttl:1
 ```
 So how do we find the root packages?
+
 - They are described in the sole `SpdxDocument` per SPDX file:
 ```
 $ grep -c spdx:SpdxDocument *.ttl
@@ -160,17 +259,7 @@ grep -h spdx:relationshipType *.ttl|perl -pe 's{ +}{ }g'|sort|uniq -c
 ```
 - As you see in the turtle example below,  the root relation is `SpdxDocument - describes - Package`.
   This is confirmed by the count: there's exactly one per file
-- There are also relations between packages: `contains` and `dependsOn`
-
-For easier loading, we concat all individual SPDX files to `ALL-spdx-2.3.zip`.
-After loading to GraphDB, we perform a basic exploration of classes and properties:
-```sparql
-select ?x (count(*) as ?c) {
-  {[] a ?x}
-  union {[] ?x []}
-} group by ?x order by ?x
-```
-TODO: paste table of results
+- There are also relations between packages: `contains` and `dependsOn` (we treat them the same)
 
 ## SPDX RDF Basic Structure
 The structure of the simplest SPDX of UNDERPIN software is like this:
@@ -181,7 +270,6 @@ PREFIX ptr:  <http://www.w3.org/2009/pointers#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX spdx: <http://spdx.org/rdf/terms#>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
-
 
 <SPDXRef-DOCUMENT>
         a                  spdx:SpdxDocument;
@@ -265,9 +353,107 @@ So for now we don't load and use an ontology.
 In the future we may retrofit a SPDX 2.3 ontology by "downgrading" the 3.0.1 ontology.
 
 # Sample Queries
+For easier loading, we concat all individual SPDX files to `ALL-spdx-2.3.zip`.
+Then we load them to GraphDB's `dpp` repository.
 
-## List all softwares with name, root package, download location
-Cleans up the name by removing some prefixes and suffixes
+## Explore SPDX Classes and Properties
+`SPDX-terms` is a basic exploration of classes and properties:
+```sparql
+select ?x (count(*) as ?c) {
+  {[] a ?x}
+  union {[] ?x []}
+} group by ?x order by ?x
+```
+- The `dpp` database uses 78 SPDX terms: 16 classes and 62 properties.
+- The key classes and props are commented below
+- The main classes are Package and Relationship.
+  - As you see from the numbers, our softwares use a pretty huge numbers of subsidiary packages (libraries).
+  - The reason the number of Relations is 2.5x bigger is that the same package can be used several times through several paths
+
+| ?x                                 |    ?c | comment                                    |
+|------------------------------------|-------|--------------------------------------------|
+| spdx:Annotation                    |  5715 |                                            |
+| spdx:Checksum                      |  3998 |                                            |
+| spdx:ConjunctiveLicenseSet         |  1396 |                                            |
+| spdx:CreationInfo                  |    10 |                                            |
+| spdx:CrossRef                      |   309 |                                            |
+| spdx:DisjunctiveLicenseSet         |    34 |                                            |
+| spdx:ExternalRef                   |  7630 |                                            |
+| spdx:ExtractedLicensingInfo        |   547 | License info extracted from a file         |
+| spdx:File                          |  2978 |                                            |
+| spdx:ListedLicense                 |    54 |                                            |
+| spdx:ListedLicenseException        |     4 |                                            |
+| spdx:Package                       |  7648 | Software, manifest, library                |
+| spdx:PackageVerificationCode       |  3691 |                                            |
+| spdx:Relationship                  | 17118 | Relation between two packages              |
+| spdx:SpdxDocument                  |    10 |                                            |
+| spdx:WithExceptionOperator         |   100 |                                            |
+| spdx:algorithm                     |  3998 |                                            |
+| spdx:annotation                    |  5715 |                                            |
+| spdx:annotationDate                |  5715 |                                            |
+| spdx:annotationType                |  5715 |                                            |
+| spdx:annotator                     |  5715 |                                            |
+| spdx:checksum                      |  3998 |                                            |
+| spdx:checksumValue                 |  3998 |                                            |
+| spdx:created                       |    10 |                                            |
+| spdx:creationInfo                  |    10 |                                            |
+| spdx:creator                       |    20 |                                            |
+| spdx:crossRef                      |   309 |                                            |
+| spdx:dataLicense                   |    10 |                                            |
+| spdx:deprecatedVersion             |     1 |                                            |
+| spdx:downloadLocation              |  7648 |                                            |
+| spdx:exceptionTextHtml             |     4 |                                            |
+| spdx:externalRef                   |  7630 |                                            |
+| spdx:extractedText                 |   547 |                                            |
+| spdx:fileName                      |  2978 |                                            |
+| spdx:filesAnalyzed                 |  3957 |                                            |
+| spdx:hasExtractedLicensingInfo     |   546 |                                            |
+| spdx:isDeprecatedLicenseId         |    58 |                                            |
+| spdx:isFsfLibre                    |    38 |                                            |
+| spdx:isLive                        |   309 |                                            |
+| spdx:isOsiApproved                 |    54 |                                            |
+| spdx:isValid                       |   309 |                                            |
+| spdx:isWayBackLink                 |   309 |                                            |
+| spdx:licenseConcluded              |  7629 | License listed with a package              |
+| spdx:licenseDeclared               |  7629 | License listed with a package              |
+| spdx:licenseException              |   100 |                                            |
+| spdx:licenseExceptionId            |     4 |                                            |
+| spdx:licenseExceptionTemplate      |     4 |                                            |
+| spdx:licenseExceptionText          |     4 |                                            |
+| spdx:licenseId                     |   601 | Identifier for listed license              |
+| spdx:licenseName                   |    54 |                                            |
+| spdx:licenseText                   |    54 |                                            |
+| spdx:licenseTextHtml               |    54 |                                            |
+| spdx:match                         |   309 |                                            |
+| spdx:member                        | 11532 | Member licenses of a ConjunctiveLicenseSet |
+| spdx:name                          |  8262 | Name of package or extracted license       |
+| spdx:order                         |   309 |                                            |
+| spdx:packageVerificationCode       |  3691 |                                            |
+| spdx:packageVerificationCodeValue  |  3691 |                                            |
+| spdx:primaryPackagePurpose         |  7648 |                                            |
+| spdx:referenceCategory             |  7630 |                                            |
+| spdx:referenceLocator              |  7630 |                                            |
+| spdx:referenceType                 |  7630 |                                            |
+| spdx:relatedSpdxElement            | 17118 | Target package of a relation               |
+| spdx:relationship                  | 17118 | Relation between 2 packages                |
+| spdx:relationshipType              | 17118 | 2 kinds that we treat the same             |
+| spdx:sourceInfo                    |  3939 |                                            |
+| spdx:specVersion                   |    10 |                                            |
+| spdx:standardLicenseHeader         |    22 |                                            |
+| spdx:standardLicenseHeaderHtml     |    22 |                                            |
+| spdx:standardLicenseHeaderTemplate |    22 |                                            |
+| spdx:standardLicenseTemplate       |    54 |                                            |
+| spdx:supplier                      |  7630 |                                            |
+| spdx:timestamp                     |   309 |                                            |
+| spdx:url                           |   309 |                                            |
+| spdx:versionInfo                   |  7632 |                                            |
+| rdf:type                           | 51242 |                                            |
+| rdfs:comment                       |  5777 |                                            |
+| rdfs:seeAlso                       |    98 |                                            |
+
+## List all softwares
+`DPP-softwares` returns the root packages with name, download location
+- Cleans up the name by removing some prefixes and suffixes
 ```sparql
 select ?root ?name ?download {
   ?doc a spdx:SpdxDocument;
@@ -279,8 +465,9 @@ select ?root ?name ?download {
 }
 ```
 
-## List softwares with count of packages they contain or depend on
-The count of packages is an indication of the complexity of the software:
+## Softwares with count of packages
+`DPP-package-count` returns all sofwares with a count of packages they contain or depend on.
+The is an indication of the complexity of the software:
 ```sparql
 PREFIX spdx: <http://spdx.org/rdf/terms#>
 select ?name (count(distinct ?pkg) as ?c) {
@@ -307,7 +494,7 @@ select ?name (count(distinct ?pkg) as ?c) {
 | data-source                   |  231 |
 
 ## List licenses per count
-This query shows all open source licenses used by UNDERPIN software in descending order of number of uses.
+`DPP-license-count` shows all open source licenses used by UNDERPIN software in descending order of number of uses.
 It takes care of some peculiarities:
 - "Conjunctive" licenses are represented as a blank nodes where `spdx:member` lists the constituent licenses
 - `ExtractedLicensingInfo` doesn't bind to a formal license URL with `licenseId`, but we can use `name` that is well-structured
@@ -342,6 +529,26 @@ There are 324 unique license strings. Here are the top 15 or so:
 | LGPL-3.0-or-later |  134 |
 | public-domain     |  133 |
 
+## Licenses per Software
+`DPP-license-per-software` counts number of licenses per UNDERPIN software:
+```sparql
+PREFIX spdx: <http://spdx.org/rdf/terms#>
+select ?name ?license (count(*) as ?c) {
+ ?doc a spdx:SpdxDocument;
+     spdx:relationship [spdx:relationshipType spdx:relationshipType_describes; spdx:relatedSpdxElement ?root].
+  ?root spdx:name ?name1; (spdx:relationship/spdx:relatedSpdxElement)+ ?package.
+  bind(replace(replace(?name1,"usr/local/lib/python.*/site-packages/(.*)/METADATA","$1"),
+      "^C:/Users/nkape/|^urn:|/opt/|tomcat/webapps/PoolParty/WEB-INF/lib/|app/app.jar/BOOT-INF/lib/|.tar.gz$|.tar$|.jar$","") as ?name)
+  ?package spdx:licenseDeclared/spdx:member? ?lic .
+  optional {?lic spdx:name ?licName}
+  optional {?lic spdx:licenseId ?licId}
+  filter(?lic != spdx:noassertion && (!bound(?name) || ?licName!="NOASSERTION") && !isBlank(?lic))
+  bind(if(exists{?lic a spdx:ExtractedLicensingInfo},?licName,?licId) as ?license)
+} group by ?name ?license order by desc(?c)
+```
+The result is a 2-dimensional table of numbers that is best presented as a pivot table in GraphDB Workbench:
+
+![](dpp-licenses-per-software.png)
 
 # Visual Graph Configuration
 Graph config DPP: "Root packages; expand them to show dependencies".
